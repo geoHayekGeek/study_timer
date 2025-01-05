@@ -1,6 +1,13 @@
 class Task {
+  int? id;
   String text;
   bool isCompleted;
+  DateTime? createdAt;
 
-  Task({required this.text, this.isCompleted = false});
+  Task({
+    this.id,
+    required this.text,
+    this.isCompleted = false,
+    this.createdAt,
+  });
 }
